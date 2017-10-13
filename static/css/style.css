@@ -1,3 +1,41 @@
-h1 {
-	color: blue;
+#missingFields{
+  color: red;
+}
+
+header {
+  height: 15vh;
+  background-color: gray;
+  opacity: 1;
+}
+
+footer {
+  height: 15vh;
+  background-color: pink;
+  opacity: 1;
+}
+
+.rightSide {
+  text-align: right;
+}
+
+.largerAndPadding {
+  font-size: 35px;
+  padding: 30px;
+}
+
+.defaultOpacity {
+  opacity: 1;
+}
+
+.container {
+  height: 60vh;
+  padding: 30px;
+}
+
+.contactMargin{
+  margin-left: 30px;
+}
+
+.noTextDecor {
+  text-decoration: none;
 }

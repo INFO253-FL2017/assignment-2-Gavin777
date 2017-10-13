@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Assignment 1 - INFO 253 Web Architecture</title>
+		<title>Contact Me</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 		<meta charset="utf-8"/>
+
 	</head>
 	<body>
 		<header>
@@ -13,25 +14,30 @@
 				<a class="noTextDecor contactMargin" href="contact"> Contact </a>
 			</div>
 		</header>
-		<div class="container">
 
-			<h1>My first assignment</h1>
-			<h2> Check out some blog posts! </h2>
-			<ul>
-				<li><a href="blog/8-experiments-in-motivation">8 Experiments in Motivation</a> </li>
-				<li> <a href="blog/a-mindful-shift-of-focus">A Mindful Shift of Focus</a> </li>
-				<li> 	<a href="blog/how-to-develop-an-awesome-sense-of-direction">How to Develop an Awesome Sense of Direction</a> </li>
-				<li> <a href="blog/training-to-be-a-good-writer">Training to Be a Good Writer</a> </li>
-				<li> <a href="blog/what-productivity-systems-wont-solve">What Productivity Systems Won't Solve</a> </li>
-			</ul>
-
-
-			<div class = "larger">
-				<a href="about"> Learn more about me! </a> <br>
-				<a href="contact"> Contact Me! </a>
-			</div>
+		<div id="missingFields">
 		</div>
 
+
+    <div class="container">
+			<h1>Contact me!</h1>
+
+      <form id = "contactForm" class="greaterMargins" action="/contact" method="POST">
+
+        Name: <br>
+        <input type="text" id="name" name="name" placeholder="ex: Gavin"> <br>
+
+			  Subject: <br>
+
+        <input type="text" id="subject" name="subject" placeholder="ex: Greetings"> <br>
+
+				Message: <br>
+				<input type="text" id="message" name="message" placeholder="ex: Hello, how are you?"> <br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
 
 		<footer>
 			<div class = "largerAndPadding" style="text-align: center;">
@@ -40,5 +46,6 @@
 				<a class="contactMargin" href="contact" style="text-decoration: none;"> Contact </a>
 			</div>
 		</footer>
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	</body>
 </html>

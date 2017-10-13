@@ -148,6 +148,6 @@ being accessed properly
  1. **NOTE: This must be done using plain JavaScript. To recieve full credit you cannot include an external library**
  2. You will need to sign up for an account at [OpenWeatherMap](https://openweathermap.org) and [get an API key](http://openweathermap.org/appid)
  3. Next you will need to look at [the documentation](http://openweathermap.org/current) to get the weather for Berkeley, CA
- 4. Modify your website to contact OpenWeatherMap to get the latest weather from Berkeley. This must be done on the front end/the browser, so you must use JavaScript that is being run on your browser (think ```<script src="js/script.js"></script>```)
+ 4. Modify your website to contact OpenWeatherMap to get the latest weather from Berkeley. This must be done on the front end/the browser, so you must use JavaScript that is being run on your browser (think ```<script src="{{ url_for('static', filename='js/script.js') }}"></script>```)
  5. Display it on each of the five blog posts
  
